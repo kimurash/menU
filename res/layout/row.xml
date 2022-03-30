@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- メニュー名と金額を横並びに並べるLinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <!-- メニュー名 -->
+        <TextView
+            android:id="@+id/tvMenuName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+
+        <!-- 円マーク -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/tv_menu_price_unit"
+            android:textSize="18sp" />
+
+        <!-- 金額 -->
+        <TextView
+            android:id="@+id/tvMenuPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <!-- カロリーと栄養バランスを表示するLinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <!-- カロリーを表示するTextView -->
+        <TextView
+            android:id="@+id/tvMenuCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+
+        <!-- "kcal" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/tv_menu_cal_unit"
+            android:textSize="14sp"/>
+
+        <!-- "赤:" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/tv_menu_red"
+            android:textSize="14sp"/>
+
+        <!-- 赤成分を表示するTextView -->
+        <TextView
+            android:id="@+id/tvMenuRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"/>
+
+        <!-- "緑:" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/tv_menu_green"
+            android:textSize="14sp"/>
+
+        <!-- 緑成分を表示するTextView -->
+        <TextView
+            android:id="@+id/tvMenuGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"/>
+
+        <!-- "黄:" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/tv_menu_yellow"
+            android:textSize="14sp"/>
+
+        <!-- 黄成分を表示するTextView -->
+        <TextView
+            android:id="@+id/tvMenuYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+</LinearLayout>
