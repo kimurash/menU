@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">menU</string>
+
+    <string name="tv_menu_price_unit">￥</string>
+    <string name="tv_menu_cal_unit">kcal</string>
+    <string name="tv_menu_red">赤:</string>
+    <string name="tv_menu_green">緑:</string>
+    <string name="tv_menu_yellow">黄:</string>
+
+    <string name="menu_list_options_staple">主食</string>
+    <string name="menu_list_options_main">おかず（主菜）</string>
+    <string name="menu_list_options_side">小鉢（副菜）</string>
+    <string name="menu_list_options_dessert">デザート</string>
+
+    <string name="tv_result_title">献立</string>
+    <string name="tv_result_sum">総計</string>
+
+    <string name="dialog_title">削除確認</string>
+    <string name="dialog_msg">選択されたメニューを献立から削除します。よろしいですか？</string>
+    <string name="dialog_btn_ok">削除</string>
+    <string name="dialog_byn_ng">キャンセル</string>
+</resources>

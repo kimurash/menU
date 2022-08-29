@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- "献立" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/tv_result_title"
+        android:textSize="25sp"/>
+
+    <!-- 献立一覧 -->
+    <ListView
+        android:id="@+id/lvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- "合計" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/tv_result_sum"
+        android:textSize="18sp"/>
+
+    <!-- 総計表示 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- カロリー合計 -->
+        <TextView
+            android:id="@+id/tvSumOfCal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="0.2"
+            android:textSize="14sp"/>
+
+        <!-- "kcal" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/tv_menu_cal_unit"
+            android:textSize="14sp"/>
+
+        <!-- "赤:" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/tv_menu_red"
+            android:textSize="14sp"/>
+
+        <!-- 赤成分を表示するTextView -->
+        <TextView
+            android:id="@+id/tvSumOfRed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"/>
+
+        <!-- "緑:" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_menu_green"
+            android:textSize="14sp"/>
+
+        <!-- 緑成分を表示するTextView -->
+        <TextView
+            android:id="@+id/tvSumOfGreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"/>
+
+        <!-- "黄:" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_menu_yellow"
+            android:textSize="14sp"/>
+
+        <!-- 黄成分を表示するTextView -->
+        <TextView
+            android:id="@+id/tvSumOfYellow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"/>
+
+        <!-- 円マーク -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/tv_menu_price_unit"
+            android:textSize="18sp" />
+
+        <!-- 金額 -->
+        <TextView
+            android:id="@+id/tvSumOfPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</LinearLayout>
